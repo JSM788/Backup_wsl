@@ -1,0 +1,138 @@
+/* * {
+  outline: 1px dotted;
+} */
+
+.main-container {
+  background-color: rgb(240, 234, 231);
+  height: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  background-color: rgb(240, 234, 231);
+}
+
+
+.arrow_return {
+  margin: auto;
+  max-width: 1440px;
+  margin-bottom: 30px;
+}
+
+/* ----------- Main ----------- */
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 55px;
+  padding: 50px 100px 100px 90px;
+}
+
+/* ----------- Title Datos Personales ----------- */
+.title_pagar {
+  padding: 0 0 50px 0;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+/* ----------- Form ----------- */
+
+/* ------------- Fieldset 1 -------------*/
+
+.form4_fieldset1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 100%;
+  min-width: 350px;
+}
+
+.form4_fieldset1 img {
+  width: 200px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+
+/* ------------- Hr -------------*/
+
+.hr_envio {
+  margin: 25px 0 15px 0;
+  border-top-width: 2px;
+}
+
+
+/* ------------- Fieldset 2 -------------*/
+
+.form4_fieldset2 {
+  width: 100%;
+}
+
+.form4_data--row1 {
+  width: 100%;
+  min-width: 350px;
+  margin-top: 30px;
+}
+
+.form4_data--row2 {
+  width: 350px;
+  margin-top: 30px;
+}
+
+.form4_data--row3 {
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.form4_data_row3--input1,
+.form4_data_row3--input2 {
+  min-width: 350px;
+}
+
+.form4_label {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* -------------Inputs-------------*/
+
+.form4_input {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: 3px solid rgb(198, 192, 192);
+}
+
+.form4_input:focus {
+  border: 3px solid black;
+  box-shadow: 1px 0px 2px;
+}
+
+.form4_input[type="text"],
+[type="email"],
+[type="phone"],
+[type="number"] {
+  text-indent: 20px;
+}
+
+
+/* ------------- Fieldset 3 -------------*/
+.button_pagar {
+  margin: 50px 0 0 0;
+  padding: 12px 85px;
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 10px;
+}
+
+

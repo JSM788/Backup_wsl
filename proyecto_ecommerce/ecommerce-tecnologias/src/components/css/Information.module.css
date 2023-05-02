@@ -1,0 +1,58 @@
+.container {
+  min-width: 350px;
+}
+
+.title {
+  margin: 30px 0;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+/* Form */
+.row1,
+.row3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.row2 {
+  margin: 30px 0;
+}
+
+.input {
+  width: 100%;
+  min-width: 350px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid rgb(198, 192, 192);
+}
+
+.validation {
+  margin-bottom: 30px;
+}
+
+.terms {
+  display: flex;
+  gap: 0.5rem;
+  margin: 20px 0;
+}
+
+/* ------------- Button -------------*/
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button_guardar {
+  padding: 12px 85px;
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 10px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: bold;
+}

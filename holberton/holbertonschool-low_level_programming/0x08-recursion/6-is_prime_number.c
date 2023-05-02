@@ -1,0 +1,32 @@
+#include "main.h"
+
+/**
+ * check_prime - prototype recursive
+ * @number: int
+ * @iterator: int
+ * Return: +1
+ */
+
+int check_prime(int number, int iterator)
+{
+	if (number == iterator)
+		return (1);
+	if (number % iterator == 0)
+		return (0);
+	return (check_prime(number, iterator + 1));
+}
+
+/**
+ * is_prime_number - prototype recursive
+ * @n: int
+ * Return: 2
+ */
+
+int is_prime_number(int n)
+{
+	if (n <= 1)
+		return (0);
+	if (n % 2 == 0 && n != 2)
+		return (0);
+	return (check_prime(n, 2));
+}

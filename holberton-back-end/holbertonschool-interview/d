@@ -1,0 +1,77 @@
+[33mcommit 67ec7b635b9ed1ec3631bcfc8e3ddc27b565e67f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: JSM788 <salinasjuan788@gmail.com>
+Date:   Thu Dec 22 23:59:13 2022 -0500
+
+    Fixing code
+
+[33mcommit 12d625d077922696964955c9ceafba3acd95b1b8[m
+Author: JSM788 <salinasjuan788@gmail.com>
+Date:   Thu Dec 22 23:51:20 2022 -0500
+
+    Change shebang
+
+[33mcommit 39d47eb3dcf0a5d57aa794e8c644a1b6cc9f280f[m
+Author: JSM788 <salinasjuan788@gmail.com>
+Date:   Thu Dec 22 23:47:29 2022 -0500
+
+    Adding 0-stats.py file
+
+[33mcommit 856b15d35e64d4d436afbf627033512ddfe00fbe[m
+Author: JSM788 <salinasjuan788@gmail.com>
+Date:   Thu Dec 22 10:52:40 2022 -0500
+
+    Adding 0x03-log_parsing folder
+
+[33mcommit 5a2c8dd7f193b5b5ed083b9007c13ee4d95eaef9[m
+Author: JSM788 <salinasjuan788@gmail.com>
+Date:   Fri Dec 9 13:00:25 2022 -0500
+
+    Adding condition
+
+[33mcommit a5f8417a9749790e597a704a9d524b923107c8db[m
+Author: JSM788 <salinasjuan788@gmail.com>
+Date:   Fri Dec 9 12:44:08 2022 -0500
+
+    Adding 0-lockboxes.py file
+
+[33mcommit a07cf44fb1cdf878736f2f5f231494b2ba5dd06a[m
+Author: JSM788 <salinasjuan788@gmail.com>
+Date:   Fri Dec 9 06:50:33 2022 -0500
+
+    Adding 0x01-lockboxes folder
+
+[33mcommit 077115e8a36d3ea780547b87717ebc9e40edb5d9[m
+Author: JSM788 <salinasjuan788@gmail.com>
+Date:   Sun Dec 4 23:57:18 2022 -0500
+
+    Adding blank line
+
+[33mcommit 9e43a631bf0604f1eeaccfcc3591253377428af1[m
+Author: JSM788 <salinasjuan788@gmail.com>
+Date:   Sun Dec 4 23:56:08 2022 -0500
+
+    Adding comments
+
+[33mcommit a28c3552e9bd52598817317e547c8a3262ff4b28[m
+Author: JSM788 <salinasjuan788@gmail.com>
+Date:   Sun Dec 4 23:53:06 2022 -0500
+
+    Adding info in README
+
+[33mcommit 33eb03ce5be653e4cedb5d111da653f9eff55d8d[m
+Author: JSM788 <salinasjuan788@gmail.com>
+Date:   Sun Dec 4 23:50:11 2022 -0500
+
+    Addig 0-pascal_triangle.py file
+
+[33mcommit 2ec288a7b2277e28bbc7d022123791f0917df619[m
+Author: JSM788 <salinasjuan788@gmail.com>
+Date:   Sun Dec 4 23:44:55 2022 -0500
+
+    0x00-pascal_triangle
+
+[33mcommit 8b5b3e9fc60c9ec1f7a785d7923c998dbd9b433f[m
+Author: Juan Salinas Misayauri <98189391+JSM788@users.noreply.github.com>
+Date:   Sun Dec 4 23:43:41 2022 -0500
+
+    Initial commit

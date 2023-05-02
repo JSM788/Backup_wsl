@@ -1,0 +1,103 @@
+.container {
+  min-width: 350px;
+}
+
+.section1 {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 40px;
+}
+
+.info1 {
+  width: 50%;
+}
+
+.title_item,
+.title_amount,
+.title_send,
+.title_price {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 18px;
+  color: grey;
+}
+.item_details {
+  display: flex;
+}
+
+.info2 {
+  width: 50%;
+  display: flex;
+}
+
+.info2_amount,
+.info2_send,
+.info2_price {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.amount_number,
+.send_number,
+.price_number {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ------------- Section 2 ------------*/
+
+.section2 {
+  display: flex;
+  gap: 2rem ;
+}
+
+.information, 
+.send  {
+  flex: 1;
+}
+
+.header_information,
+.header_send,
+.header_pay {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.section5 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button_pay {
+  padding: 12px 85px;
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 10px;
+}
+
+.hr {
+  margin: 5px 0 20px 0;
+  border-top-width: 2px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+.section1,
+.section2,
+.section3,
+.section4,
+.section5 {
+  margin-top: 40px;
+}
+
+

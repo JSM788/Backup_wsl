@@ -1,0 +1,67 @@
+
+                       TESTING PRINT SQUARE
+
+==================================================================
+
+Import the function:
+
+	>>> print_square = __import__('4-print_square').print_square
+
+File: ``4-print_square``
+
+Function: print_square()
+
+Description: This function print a square
+
+==================================================================
+
+Tests:
+	
+	>>> print_square(0)
+	
+	>>> print_square(6, 2)
+	Traceback (most recent call last):
+	TypeError: print_square() takes 1 positional argument but 2 were given
+	
+	
+	>>> print_square(-2)
+        Traceback (most recent call last):
+        ValueError: size must be >= 0
+	
+	
+	>>> print_square(1.2)
+        Traceback (most recent call last):
+	TypeError: size must be an integer
+
+
+	>>> print_square("Hi", 4":D")
+	Traceback (most recent call last):
+	SyntaxError: invalid syntax
+
+
+	>>> print_square("Hello")
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+
+	>>> print_square()
+	Traceback (most recent call last):
+	TypeError: print_square() missing 1 required positional argument: 'size'
+
+
+	>>> print_square(\n)
+	Traceback (most recent call last):
+	SyntaxError: unexpected character after line continuation character
+
+	
+	>>> print_square(int(000000005))
+        Traceback (most recent call last):
+        SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers
+
+	
+	>>> print_square(float(50.4))
+        Traceback (most recent call last):
+        TypeError: size must be an integer
+
+	
+	

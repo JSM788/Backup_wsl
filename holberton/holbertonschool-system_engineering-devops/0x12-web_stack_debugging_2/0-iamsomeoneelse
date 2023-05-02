@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# The script should run the whoami command under the user passed as an argument
+# This script works by passing it to different users.
+
+if [ "${#}" -eq 1 ]
+then
+	sudo -u "$1" whoami;
+fi

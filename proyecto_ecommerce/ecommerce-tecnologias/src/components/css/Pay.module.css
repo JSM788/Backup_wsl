@@ -1,0 +1,89 @@
+/* * {
+  outline: dotted 1px;
+} */
+
+.container {
+  min-width: 350px;
+}
+
+.title {
+  margin: 30px 0;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.title_card {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.cards_container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.img_container {
+  width: 250px;
+  max-width: 100px;
+  border-radius: 5px;
+}
+
+.img_card {
+  width: 100%;
+  height: 100%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  /* object-fit: cover; */
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: 3px solid rgb(198, 192, 192);
+}
+
+.row1 {
+  padding: 30px 0;
+}
+
+.row2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.hr {
+  margin: 20px 0;
+  border-top-width: 2px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total_pedido,
+.total_price {
+  font-weight: bold;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+}
+
+.button_pay {
+  padding: 12px 85px;
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 10px;
+}

@@ -1,0 +1,84 @@
+
+>>> MyList = __import__('1-my_list').MyList
+
+
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+
+
+Tests:
+
+	
+	>>> my_list.print_sorted()
+        [1, 2, 3, 4, 5]
+
+	>>> my_list.remove(5)
+	>>> print(my_list)
+	[1, 4, 2, 3]
+
+	>>> print(my_list[0])
+	1
+	
+
+	>>> my_list = MyList((1, 2, 3, 4))
+	>>> print(my_list)
+	[1, 2, 3, 4]
+
+
+	>>> my_list = MyList((float('inf'), 5, 6, 7))
+	>>> print(my_list)	
+	[inf, 5, 6, 7]
+
+
+	>>> my_list = MyList((-1, -2))
+	>>> print(my_list)
+	[-1, -2]
+
+	
+	>>> my_list = MyList({'key1': 'value1', 'key2': 'value2'})
+	>>> my_list
+	['key1', 'key2']
+
+
+	>>> my_list.print_sorted(1)
+	Traceback (most recent call last):
+	TypeError: print_sorted() takes 1 positional argument but 2 were given
+
+
+	>>> my_list = MyList([2, "Hello", "Juan", 8])
+	>>> my_list.print_sorted()
+	Traceback (most recent call last):
+	TypeError: '<' not supported between instances of 'str' and 'int'
+
+
+	>>> my_list = MyList('5', '2', 7, '0')
+	Traceback (most recent call last):
+	TypeError: list expected at most 1 argument, got 4
+
+	
+	>>> my_list = MyList()
+	>>> my_list.print_sorted()
+	[]
+
+
+	>>> print(my_list[10])
+	Traceback (most recent call last):
+	IndexError: list index out of range
+
+
+	>>> my_list = MyList(['hello', 'juan'])
+	>>> print(my_list)
+	['hello', 'juan']
+	
+	
+	>>> my_list = MyList((1, 2, 3, 4, 5))
+	>>> print(my_list)
+	[1, 2, 3, 4, 5]
+
+	

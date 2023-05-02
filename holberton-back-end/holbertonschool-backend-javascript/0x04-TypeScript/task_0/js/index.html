@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Build a table</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+  </body>
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+  <script>
+    const elemento = document.querySelector("div")
+    console.log(elemento.textContent)
+    
+
+    const datos = [
+      ["Juan", "Perez", "jperez@gmail.com"],
+      ["Maria", "Garcia", "mgarcia@gmail.com"],
+      ["Pedro", "Martinez", "pmartinez@gmail.com"],
+    ];
+
+    // Obtenemos una referencia al elemento en el que deseamos agregar la tabla
+    const contenedor = document.querySelector("#demo");
+
+    // Creamos un elemento table y lo agregamos al contenedor
+    const tabla = document.createElement("table");
+    contenedor.appendChild(tabla);
+
+    // Iteramos a través de nuestra matriz de datos y agregamos una fila
+    // para cada elemento
+    datos.forEach((fila) => {
+      const filaElemento = document.createElement("tr");
+
+      fila.forEach((celda) => {
+        const celdaElemento = document.createElement("td");
+        celdaElemento.textContent = celda;
+        filaElemento.appendChild(celdaElemento);
+      });
+
+      tabla.appendChild(filaElemento);
+    });
+    document.body.appendChild(tabla);
+  </script>
+  <script src="build-table.js"></script>
+</html>

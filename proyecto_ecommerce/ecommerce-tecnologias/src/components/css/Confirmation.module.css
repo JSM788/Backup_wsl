@@ -1,0 +1,60 @@
+.container {
+  min-width: 350px;
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title_section1 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.title_section2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+.detail{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.hr {
+  margin: 20px 0;
+  border-top-width: 2px;
+}
+
+
+h1 {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+h3 {
+  margin: 18px 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.section4 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button_finalizar {
+  padding: 12px 85px;
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 10px;
+  margin: 20px;
+}

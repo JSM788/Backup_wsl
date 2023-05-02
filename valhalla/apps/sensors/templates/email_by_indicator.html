@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Alert Valhalla</title>
+    <style>
+        .bg {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            background-color: whitesmoke;
+            overflow: hidden;
+            color: gray;
+        }
+
+        h1 {
+            font-weight: lighter;
+            font-size: 1.4em;
+            margin: 1% 0;
+        }
+
+        .header {
+            background-color: #57B8FF;
+            padding: 4% 8% 2% 8%;
+            text-align: center;
+            color: white;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .header img{
+            margin: 5px auto;
+        }
+
+        .blue {
+            color: #1139FA;
+            margin-left: 4px;
+        }
+
+        .article {
+            padding: 4% 8%;
+            margin: 0 30px;
+        }
+
+        .content {
+            padding: 20px 8%;
+            background: white;
+        }
+
+        p {
+            display: flex;
+            align-items: center;
+        }
+
+        p img {
+            margin-right: 5px;
+        }
+
+        p strong {
+            color: #1139FA;
+            margin: 0 4px;
+        }
+
+        .criticContainer {
+            margin: 4% 0;
+        }
+
+        .critic {
+            color: white;
+            margin-right: 8px;
+            background-color: #f0142f;
+            padding: 4px 6px;
+            border-radius: 4px;
+        }
+
+        .status {
+            color: #f0142f;
+        }
+
+        .footer {
+            background: white;
+            border-top: 1px solid #0000003a;
+            text-align: center;
+            padding: 20px 8%;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            font-size: 0.8em;
+            background-color: #1139FA;
+            border: 0;
+            border-radius: 4px;
+            padding: 10px 64px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+<div class="bg">
+    <div class="article">
+        <div class="header">
+            <img src="cid:alerta.png" width="80"/>
+            <h1>Un indicador se elevó a estado peligroso</h1>
+        </div>
+        <div class="content">
+            <p>
+                Se ha presentado un cambio alarmante
+                en los niveles de {{ indicator }} en la sede
+                <span class="blue">{{ headquarter.name }}.</span>
+            </p>
+            <p>
+                <img src="cid:estado.png" width="16"/>
+                <strong>Estado:</strong>
+                <span class="status">{{ status_after }}</span>
+            </p>
+            <p>
+                <img src="cid:ambiente.png" width="16"/>
+                <strong>Sala:</strong>
+                <span>{{ room.name }}</span>
+            </p>
+            <p>
+                <img src="cid:calendario.png" width="16"/>
+                <strong>Fecha:</strong>
+                <span>{{ date }}</span>
+            </p>
+            <p>
+                <img src="cid:reloj.png" width="16"/>
+                <strong>Hora:</strong>
+                <span>{{ time }}</span>
+            </p>
+        </div>
+        <div class="footer">
+            <a href="https://www.administrador.valhalla.com.pe/sistema/alertas/{{ room.id }}" target="_blank"><span class="button">Revisar la alerta ahora</span></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+/* Estilos globales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: "Nunito";
+  letter-spacing: 0.4px;
+}
+
+/* Sub icons de prueba */
+.home,
+.condominios,
+.CrearCondominio {
+  font-size: 3rem;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-right: 320px;
+  padding-left: 500px;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: space-between;
+  background: #f2f4ff;
+}
+
+.edificios,
+.admin,
+.propietario,
+.inquilino,
+.cargamasiva,
+.configuracion
+.gastos {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+/* Carga masiva */
+.container {
+  display: flex;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}

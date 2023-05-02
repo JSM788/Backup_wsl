@@ -1,0 +1,15 @@
+Automaticamente cuando se instancia BaseModel se crea un nuevo objeto
+
+Probablemente la instancia ejecutada en el test... sea el objeto q se llega a trasladat al save() del Filestorage mediente el models.storage.new() en el BaseModel
+
+el save() de BaseModel actualiza el objeto y despues gira a hacia
+el save() de Filestorage, para depues enviar el objeto al to_dict, para añadir la clase y darle mejor formato a la hora, luego el retorno sera guardado como value en dic_to_json y como key tendra a BaseModel.id
+Este seria el formato -> {BaseModel.id: {diccionario}}, q despues de almacenara
+serializado en el archivo file.json
+Nota: el save() del Filestorage coge el self.__objects y lo que tiene almacenado para sobre escribir el archivo __file_path y deserializarlo; el resultado final se vera en el archivo file.json 
+
+
+El metodo destroy elimina en base a la clave del objecto que contiene json_to_dict, para luego dirigirse al save() del Filestorage coger todo lo que aun le queda almacenado al self.__objects, iterar en for en base al key del self.__objects darle un formato y serializarlo
+
+
+El nuevo all() de Filestorage en la parte del else, comprueba si el cls = clase State(<class 'models.state.State'>) que recibe del TEST es igual a la(s) clase(s) que almacena __objects si es asi lo guarda en un diccionario y asi estaria retornando solamente las clases de __objects que coinciden con la clase enviada para ser mostrada(s).

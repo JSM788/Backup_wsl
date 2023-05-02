@@ -1,0 +1,58 @@
+
+                       TESTING SAY MY NAME
+
+==================================================================
+
+Import the function:
+
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+File: ``3-say_my_name``
+
+Function: say_my_name()
+
+Description: This function returns your first and last name 
+
+==================================================================
+
+Tests:
+	>>> say_my_name('', '')
+        My name is  
+
+	>>> say_my_name(str(2), str(4))
+        My name is 2 4
+
+	>>> say_my_name("Juan", 4"Salinas")
+	Traceback (most recent call last):
+	SyntaxError: invalid syntax
+
+	
+	>>> say_my_name("Hola", "Mundo", ":D")
+        Traceback (most recent call last):
+	TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
+
+
+	>>> say_my_name("Hello", 4)
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
+
+
+	>>> say_my_name()
+	Traceback (most recent call last):
+	TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+
+	>>> say_my_name(\n)
+	Traceback (most recent call last):
+	SyntaxError: unexpected character after line continuation character
+	
+
+	>>> say_my_name("Hi", float(1.2))
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
+
+	
+	>>> say_my_name(None)
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+

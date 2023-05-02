@@ -1,0 +1,104 @@
+			
+		       TESTING ADD INTEGERS 				
+==================================================================
+
+Import the function: 
+
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+File: ``0-add_integer``
+
+Function: add_integer()
+
+Description: This function adds 2 integers
+
+==================================================================
+
+Tests:
+	
+	>>> add_integer(2)
+	100
+	
+	>>> add_integer(2, 1)
+	3
+
+
+	>>> add_integer(10, -2)
+	8
+
+
+	>>> add_integer(100.3, -2)
+	98
+
+
+	>>> add_integer(100.5, 2.5)
+	102
+
+
+	>>> add_integer(-100, -2)
+	-102
+
+
+	>>> add_integer(0, 0)
+	0
+	
+	
+	>>> add_integer(None, None)
+        Traceback (most recent call last):
+        TypeError: a must be an integer
+
+	
+	>>> add_integer(None, 5)
+        Traceback (most recent call last):
+        TypeError: a must be an integer
+	
+
+	>>> add_integer(2, None)
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+
+	>>> add_integer()
+	Traceback (most recent call last):
+	TypeError: add_integer() missing 1 required positional argument: 'a'
+
+
+	>>> add_integer(/, *)
+	Traceback (most recent call last):
+	SyntaxError: invalid syntax
+
+
+	>>> add_integer(10a; 1)
+	Traceback (most recent call last):
+	SyntaxError: invalid syntax
+		
+
+	>>> add_integer([1]; [2])
+        Traceback (most recent call last):
+        SyntaxError: invalid syntax
+
+
+	>>> add_integer("Python", "Hello")
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+	
+
+	>>> add_integer(None)
+        Traceback (most recent call last):
+	TypeError: a must be an integer
+	
+	
+	>>> add_integer( , )
+        Traceback (most recent call last):    
+        SyntaxError: invalid syntax
+	
+
+	>>> add_integer(float('NaN'))
+	Traceback (most recent call last):
+	ValueError: cannot convert float NaN to integer
+	
+
+	>>> add_integer(float('inf'))
+	Traceback (most recent call last):
+	OverflowError: cannot convert float infinity to integer
+	

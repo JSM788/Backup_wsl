@@ -1,0 +1,76 @@
+version: '3.8'
+volumes:
+  valhalla_service_postgres_dbbdata:
+services:
+#  sbabiz_mysldb:
+#    container_name: sbabiz_mysqldb
+#    image: mysql:8.0.20
+#    command: --default-authentication-plugin=mysql_native_password
+#    ports:
+#      - 3310:3306
+#    volumes:
+#      - sbabiz_mysql_dbbdata:/var/lib/mysql
+#    environment:
+#      MYSQL_ROOT_PASSWORD: sbabiz_db_password
+#      MYSQL_DATABASE: sbabiz
+#      MYSQL_USER: root
+#      MYSQL_PASSWORD: sbabiz_db_password
+#  sb_user_service_mysldb:
+#    container_name: sb_user_service_mysqldb
+#    image: mysql:8.0.20
+#    command: --default-authentication-plugin=mysql_native_password
+#    ports:
+#      - 3309:3306
+#    volumes:
+#      - sb_user_service_mysql_dbbdata:/var/lib/mysql
+#    environment:
+#      MYSQL_ROOT_PASSWORD: sb_user_service_db_password
+#      MYSQL_DATABASE: sb_user_service
+#      MYSQL_USER: root
+#      MYSQL_PASSWORD: sb_user_service_db_password
+  valhalla_service_postgres_db:
+    container_name: valhalla_service_postgres_db
+    image: postgres:12.5
+    ports:
+      - 5435:5432
+    volumes:
+      - valhalla_service_postgres_dbbdata:/var/lib/postgresql
+    environment:
+      POSTGRES_USER: valhalla_service_postgres_user
+      POSTGRES_PASSWORD: valhalla_service_postgres_password
+      POSTGRES_DB: valhalla_service_postgres_db
+#  pricing_service_mysldb:
+#    container_name: pricing_service_mysqldb
+#    image: mysql:8.0.20
+#    command: --default-authentication-plugin=mysql_native_password
+#    ports:
+#      - 3310:3306
+#    volumes:
+#      - pricing_service_mysql_dbbdata:/var/lib/mysql
+#    environment:
+#      MYSQL_ROOT_PASSWORD: pricing_service_db_password
+#      MYSQL_DATABASE: pricing_service
+#      MYSQL_USER: pricing_service_db_user
+#      MYSQL_PASSWORD: pricing_service_db_password
+#
+#  customer_account_service:
+#    container_name: customer_account_service_mysqldb
+#    image: mysql:8.0.20
+#    command: --default-authentication-plugin=mysql_native_password
+#    ports:
+#      - 3311:3306
+#    volumes:
+#      - customer_account_service_mysql_dbbdata:/var/lib/mysql
+#    environment:
+#      MYSQL_ROOT_PASSWORD: customer_account_service_db_password
+#      MYSQL_DATABASE: customer_account_service
+#      MYSQL_USER: customer_account_service_db_user
+#      MYSQL_PASSWORD: customer_account_service_db_password
+#
+#  sba_service_postgres_db:
+#    container_name: sba_service_postgres_db
+#    image: postgres:12.5
+#    environment:
+#      POSTGRES_USER: sba_service_db_user
+#      POSTGRES_PASSWORD: sba_service_db_password
+#      POSTGRES_DB: sba_service_db

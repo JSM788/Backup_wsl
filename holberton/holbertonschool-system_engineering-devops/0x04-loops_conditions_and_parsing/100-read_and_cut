@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+
+var="/etc/passwd"
+
+while read -r var
+do
+	echo "$var" | cut -d ':' -f1
+done

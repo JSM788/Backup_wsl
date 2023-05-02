@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# This script is displaying "bad luck from China", "bad luck from Japan" and "bad luck from Italy"
+
+i=1
+while [ $i -lt 21 ]
+do
+	case $i in
+	5)
+        echo "bad luck from China";
+	echo "5";;
+	10)
+        echo "bad luck from Japan";
+	echo "10";;
+	18)
+        echo "bad luck from Italy";
+	echo "18";;
+	*)
+	echo $i;;
+	esac
+	((i++))
+done
